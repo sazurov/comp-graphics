@@ -1,6 +1,8 @@
 #include "../include/Menu.h"
 #include <iostream>
 
+using namespace std;
+
 int main() {
   while (true) {
     cout << "\nВыберите задание (1, 2 или 3, 0 — выход): ";

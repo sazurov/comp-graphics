@@ -1,6 +1,8 @@
 #include "../include/Shipment.h"
 #include <iostream>
 
+using namespace std;
+
 void Shipment::init(const string &n, int q, int d, int m, int y) {
   name = n;
   quantity = q;
@@ -9,8 +11,7 @@ void Shipment::init(const string &n, int q, int d, int m, int y) {
   day = d;
   month = m;
   year = y;
-  cout << "[Инициализация] " << name << ", количество=" << quantity
-            << "\n";
+  cout << "[Инициализация] " << name << ", количество=" << quantity << "\n";
 }
 
 void Shipment::sell(int count) {
@@ -25,12 +26,12 @@ void Shipment::writeOff(int count) {
 
 void Shipment::printRest() const {
   cout << "[Остаток] " << name << ": " << (quantity - sold - writtenOff)
-            << " шт\n";
+       << " шт\n";
 }
 
 void Shipment::printReport() const {
   cout << "[Отчёт] " << name << "\n"
-            << "Поставлено: " << quantity << "\n"
-            << "Продано: " << sold << "\n"
-            << "Списано: " << writtenOff << "\n";
+       << "Поставлено: " << quantity << "\n"
+       << "Продано: " << sold << "\n"
+       << "Списано: " << writtenOff << "\n";
 }
