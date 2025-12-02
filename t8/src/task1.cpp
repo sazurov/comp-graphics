@@ -12,21 +12,23 @@ void task1() {
   const string inputFile = "input.txt";
   const string outputFile = "output.txt";
 
-  // Создаём тестовый входной файл если его нет
   ifstream testFile(inputFile);
   if (!testFile.good()) {
     cout << "Файл " << inputFile << " не найден. Создаём тестовый файл..."
          << endl;
     ofstream createFile(inputFile);
-    createFile << "яблоко\n";
-    createFile << "банан\n";
-    createFile << "апельсин\n";
-    createFile << "груша\n";
-    createFile << "киви\n";
-    createFile << "манго\n";
-    createFile << "виноград\n";
+
+    vector<string> testWords = {"яблоко", "банан",  "апельсин", "груша",
+                                "киви",   "манго",  "виноград", "слива",
+                                "персик", "абрикос"};
+
+    for (const string &w : testWords) {
+      createFile << w << "\n";
+    }
+
     createFile.close();
-    cout << "Тестовый файл создан." << endl;
+    cout << "Тестовый файл создан с " << testWords.size() << " словами."
+         << endl;
   }
   testFile.close();
 
@@ -53,7 +55,6 @@ void task1() {
 
   cout << "Прочитано слов: " << words.size() << endl;
 
-  // Сортируем слова в алфавитном порядке
   sort(words.begin(), words.end());
 
   // Записываем отсортированные слова в выходной файл
