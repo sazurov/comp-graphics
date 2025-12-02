@@ -1,9 +1,11 @@
 #include "../include/SafePackagedShipment.h"
 #include <iostream>
 
+using namespace std;
+
 bool SafePackagedShipment::checkNegative(int value, const char *action) const {
   if (value < 0) {
-    std::cout << "Ошибка: отрицательное значение для " << action << "\n";
+    cout << "Ошибка: отрицательное значение для " << action << "\n";
     return true;
   }
   return false;
@@ -11,7 +13,7 @@ bool SafePackagedShipment::checkNegative(int value, const char *action) const {
 
 bool SafePackagedShipment::checkZero(int value, const char *action) const {
   if (value == 0) {
-    std::cout << "Ошибка: нулевое значение для " << action << "\n";
+    cout << "Ошибка: нулевое значение для " << action << "\n";
     return true;
   }
   return false;
@@ -19,7 +21,7 @@ bool SafePackagedShipment::checkZero(int value, const char *action) const {
 
 bool SafePackagedShipment::checkEnough(int value, const char *action) const {
   if (value > (quantity - sold - writtenOff)) {
-    std::cout << "Ошибка: недостаточно товара для " << action << "\n";
+    cout << "Ошибка: недостаточно товара для " << action << "\n";
     return true;
   }
   return false;
@@ -45,7 +47,7 @@ void SafePackagedShipment::sellPack(int packs) {
     return;
   int need = packs * perPack;
   if (need > (quantity - sold - writtenOff)) {
-    std::cout << "Ошибка: недостаточно товара для продажи упаковок\n";
+    cout << "Ошибка: недостаточно товара для продажи упаковок\n";
     return;
   }
   PackagedShipment::sellPack(packs);

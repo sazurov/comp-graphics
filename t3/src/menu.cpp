@@ -8,31 +8,33 @@
 #include <sstream>
 #include <string>
 
-bool parseDate(const std::string &input, int &d, int &m, int &y) {
+using namespace std;
+
+bool parseDate(const string &input, int &d, int &m, int &y) {
   char sep1, sep2;
-  std::istringstream iss(input);
+  istringstream iss(input);
   if (!(iss >> d >> sep1 >> m >> sep2 >> y) || sep1 != '/' || sep2 != '/')
     return false;
   return true;
 }
 
 void task1Menu() {
-  std::string name, dateStr;
+  string name, dateStr;
   int d, m, y, qty;
 
-  std::cout << "Введите наименование: ";
-  std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-  std::getline(std::cin, name);
+  cout << "Введите наименование: ";
+  cin.ignore(numeric_limits<streamsize>::max(), '\n');
+  getline(cin, name);
 
-  std::cout << "Введите количество: ";
-  std::cin >> qty;
+  cout << "Введите количество: ";
+  cin >> qty;
 
-  std::cout << "Введите дату (д/м/г): ";
-  std::cin.ignore();
-  std::getline(std::cin, dateStr);
+  cout << "Введите дату (д/м/г): ";
+  cin.ignore();
+  getline(cin, dateStr);
 
   if (!parseDate(dateStr, d, m, y)) {
-    std::cout << "Неверный формат даты! Используйте д/м/г\n";
+    cout << "Неверный формат даты! Используйте д/м/г\n";
     return;
   }
 
@@ -40,9 +42,9 @@ void task1Menu() {
   s.init(name, qty, d, m, y);
 
   while (true) {
-    std::cout << "\nВыберите тест (1–3)\n0 — Выход\n> ";
+    cout << "\nВыберите тест (1–3)\n0 — Выход\n> ";
     int choice;
-    std::cin >> choice;
+    cin >> choice;
     switch (choice) {
     case 0:
       return;
@@ -56,7 +58,7 @@ void task1Menu() {
       runTest3(s);
       break;
     default:
-      std::cout << "Неверный выбор!\n";
+      cout << "Неверный выбор!\n";
       continue;
     }
     s.printRest();
@@ -65,24 +67,24 @@ void task1Menu() {
 }
 
 void task2Menu() {
-  std::string name, dateStr;
+  string name, dateStr;
   int pp, packs, d, m, y;
 
-  std::cout << "Введите наименование: ";
-  std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-  std::getline(std::cin, name);
+  cout << "Введите наименование: ";
+  cin.ignore(numeric_limits<streamsize>::max(), '\n');
+  getline(cin, name);
 
-  std::cout << "Штук в упаковке: ";
-  std::cin >> pp;
-  std::cout << "Количество упаковок: ";
-  std::cin >> packs;
+  cout << "Штук в упаковке: ";
+  cin >> pp;
+  cout << "Количество упаковок: ";
+  cin >> packs;
 
-  std::cout << "Введите дату (д/м/г): ";
-  std::cin.ignore();
-  std::getline(std::cin, dateStr);
+  cout << "Введите дату (д/м/г): ";
+  cin.ignore();
+  getline(cin, dateStr);
 
   if (!parseDate(dateStr, d, m, y)) {
-    std::cout << "Неверный формат даты! Используйте д/м/г\n";
+    cout << "Неверный формат даты! Используйте д/м/г\n";
     return;
   }
 
@@ -90,18 +92,18 @@ void task2Menu() {
   p.init(name, pp, packs, d, m, y);
 
   while (true) {
-    std::cout << "\nВыберите действие:\n"
-                 "1 — Продать 1 шт\n"
-                 "2 — Продать N шт\n"
-                 "3 — Списать 1 шт\n"
-                 "4 — Списать N шт\n"
-                 "5 — Продать упаковку\n"
-                 "6 — Тест фас. 1\n"
-                 "7 — Тест фас. 2\n"
-                 "8 — Тест фас. 3\n"
-                 "0 — Выход\n> ";
+    cout << "\nВыберите действие:\n"
+            "1 — Продать 1 шт\n"
+            "2 — Продать N шт\n"
+            "3 — Списать 1 шт\n"
+            "4 — Списать N шт\n"
+            "5 — Продать упаковку\n"
+            "6 — Тест фас. 1\n"
+            "7 — Тест фас. 2\n"
+            "8 — Тест фас. 3\n"
+            "0 — Выход\n> ";
     int c;
-    std::cin >> c;
+    cin >> c;
     switch (c) {
     case 0:
       return;
@@ -110,7 +112,7 @@ void task2Menu() {
       break;
     case 2: {
       int n;
-      std::cin >> n;
+      cin >> n;
       p.sell(n);
       break;
     }
@@ -119,13 +121,13 @@ void task2Menu() {
       break;
     case 4: {
       int n;
-      std::cin >> n;
+      cin >> n;
       p.writeOff(n);
       break;
     }
     case 5: {
       int n;
-      std::cin >> n;
+      cin >> n;
       p.sellPack(n);
       break;
     }
@@ -139,7 +141,7 @@ void task2Menu() {
       runPackagedTest3(p);
       break;
     default:
-      std::cout << "Неверный выбор!\n";
+      cout << "Неверный выбор!\n";
       continue;
     }
     p.printRest();
@@ -147,38 +149,38 @@ void task2Menu() {
 }
 
 void task3Menu() {
-  std::string name, dateStr;
+  string name, dateStr;
   int pp, packs, d, m, y;
 
-  std::cout << "Введите наименование: ";
-  std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-  std::getline(std::cin, name);
+  cout << "Введите наименование: ";
+  cin.ignore(numeric_limits<streamsize>::max(), '\n');
+  getline(cin, name);
 
-  std::cout << "Штук в упаковке: ";
-  std::cin >> pp;
-  std::cout << "Количество упаковок: ";
-  std::cin >> packs;
+  cout << "Штук в упаковке: ";
+  cin >> pp;
+  cout << "Количество упаковок: ";
+  cin >> packs;
 
-  std::cout << "Введите дату (д/м/г): ";
-  std::cin.ignore();
-  std::getline(std::cin, dateStr);
+  cout << "Введите дату (д/м/г): ";
+  cin.ignore();
+  getline(cin, dateStr);
 
   if (!parseDate(dateStr, d, m, y)) {
-    std::cout << "Неверный формат даты! Используйте д/м/г\n";
+    cout << "Неверный формат даты! Используйте д/м/г\n";
     return;
   }
 
   while (true) {
-    std::cout << "\nВыберите тест ошибки (1–7)\n0 — Выход\n> ";
-    std::string line;
-    std::getline(std::cin, line);
+    cout << "\nВыберите тест ошибки (1–7)\n0 — Выход\n> ";
+    string line;
+    getline(cin, line);
     if (line.empty())
       continue;
 
-    std::istringstream iss(line);
+    istringstream iss(line);
     int t;
     if (!(iss >> t)) {
-      std::cout << "Неверный выбор!\n";
+      cout << "Неверный выбор!\n";
       continue;
     }
 
@@ -210,7 +212,7 @@ void task3Menu() {
       safeTest7(p);
       break;
     default:
-      std::cout << "Неверный выбор!\n";
+      cout << "Неверный выбор!\n";
       continue;
     }
 
