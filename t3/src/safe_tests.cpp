@@ -2,36 +2,32 @@
 #include <iostream>
 
 void safeTest1(SafePackagedShipment &p) {
-  std::cout << "\n[SafeTest1 — отрицательная покупка]\n";
+  std::cout << "[Тест ошибки 1: отрицательная продажа]\n";
   p.sell(-5);
 }
-
 void safeTest2(SafePackagedShipment &p) {
-  std::cout << "\n[SafeTest2 — нулевая покупка]\n";
+  std::cout << "[Тест ошибки 2: продажа 0]\n";
   p.sell(0);
 }
-
 void safeTest3(SafePackagedShipment &p) {
-  std::cout << "\n[SafeTest3 — покупка больше остатка]\n";
+  std::cout << "[Тест ошибки 3: списание отрицательного]\n";
+  p.writeOff(-2);
+}
+void safeTest4(SafePackagedShipment &p) {
+  std::cout << "[Тест ошибки 4: списание 0]\n";
+  p.writeOff(0);
+}
+void safeTest5(SafePackagedShipment &p) {
+  std::cout << "[Тест ошибки 5: продажа больше остатка]\n";
   p.sell(10000);
 }
-
-void safeTest4(SafePackagedShipment &p) {
-  std::cout << "\n[SafeTest4 — отрицательное списание]\n";
-  p.writeOff(-3);
-}
-
-void safeTest5(SafePackagedShipment &p) {
-  std::cout << "\n[SafeTest5 — продажа упаковок с отрицанием]\n";
-  p.sellPack(-2);
-}
-
 void safeTest6(SafePackagedShipment &p) {
-  std::cout << "\n[SafeTest6 — продажа упаковок без остатка]\n";
-  p.sellPack(100);
+  std::cout << "[Тест ошибки 6: продажа упаковок больше остатка]\n";
+  p.sellPack(1000);
 }
-
 void safeTest7(SafePackagedShipment &p) {
-  std::cout << "\n[SafeTest7 — списание больше остатка]\n";
-  p.writeOff(9999);
+  std::cout << "[Тест 7: корректная продажа]\n";
+  p.sell(2);
+  p.writeOff(1);
+  p.sellPack(1);
 }

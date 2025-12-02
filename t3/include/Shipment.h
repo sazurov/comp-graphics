@@ -1,29 +1,26 @@
 #ifndef SHIPMENT_H
 #define SHIPMENT_H
 
-#include <iostream>
 #include <string>
 
 class Shipment {
 protected:
-  int quantity;
   std::string name;
-  int day, month, year;
+  int quantity;
   int sold;
-  int writtenoff;
+  int writtenOff;
+  int day, month, year;
 
 public:
-  Shipment();
-  Shipment(const std::string &name, int quantity, int d, int m, int y);
+  Shipment() : quantity(0), sold(0), writtenOff(0), day(0), month(0), year(0) {}
+  virtual ~Shipment() = default;
 
-  void init(const std::string &name, int quantity, int d, int m, int y);
+  virtual void init(const std::string &n, int q, int d, int m, int y);
+
   virtual void sell(int count = 1);
   virtual void writeOff(int count = 1);
-
   virtual void printRest() const;
   virtual void printReport() const;
-
-  virtual ~Shipment() = default;
 };
 
 #endif

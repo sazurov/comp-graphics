@@ -4,17 +4,17 @@
 #include "PackagedShipment.h"
 
 class SafePackagedShipment : public PackagedShipment {
-public:
-  SafePackagedShipment();
-
-  void sell(int count = 1) override;
-  void writeOff(int count = 1) override;
-  void sellPack(int packs) override;
-
 private:
   bool checkNegative(int value, const char *action) const;
   bool checkZero(int value, const char *action) const;
   bool checkEnough(int value, const char *action) const;
+
+public:
+  SafePackagedShipment() : PackagedShipment() {}
+
+  void sell(int count = 1) override;
+  void writeOff(int count = 1) override;
+  void sellPack(int packs) override;
 };
 
 #endif

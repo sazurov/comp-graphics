@@ -1,47 +1,36 @@
 #include "../include/Shipment.h"
-
-Shipment::Shipment()
-    : quantity(0), name(""), day(0), month(0), year(0), sold(0), writtenoff(0) {
-}
-
-Shipment::Shipment(const std::string &n, int q, int d, int m, int y)
-    : quantity(q), name(n), day(d), month(m), year(y), sold(0), writtenoff(0) {}
+#include <iostream>
 
 void Shipment::init(const std::string &n, int q, int d, int m, int y) {
-  std::cout << "[Инициализация] " << n << ", количество=" << q << "\n";
   name = n;
   quantity = q;
+  sold = 0;
+  writtenOff = 0;
   day = d;
   month = m;
   year = y;
-  sold = writtenoff = 0;
+  std::cout << "[Инициализация] " << name << ", количество=" << quantity
+            << "\n";
 }
 
 void Shipment::sell(int count) {
-  std::cout << "[Продажа] шт=" << count << "\n";
-  if (count > quantity)
-    count = quantity;
-  quantity -= count;
   sold += count;
+  std::cout << "[Продажа] " << count << " шт\n";
 }
 
 void Shipment::writeOff(int count) {
-  std::cout << "[Списание] шт=" << count << "\n";
-  if (count > quantity)
-    count = quantity;
-  quantity -= count;
-  writtenoff += count;
+  writtenOff += count;
+  std::cout << "[Списание] " << count << " шт\n";
 }
 
 void Shipment::printRest() const {
-  std::cout << "[Остаток] " << name << ": " << quantity << " шт\n";
+  std::cout << "[Остаток] " << name << ": " << (quantity - sold - writtenOff)
+            << " шт\n";
 }
 
 void Shipment::printReport() const {
-  std::cout << "\n[Отчёт по партии]\n"
-            << "Наименование: " << name << "\n"
-            << "Дата поставки: " << day << "." << month << "." << year << "\n"
-            << "Остаток: " << quantity << "\n"
+  std::cout << "[Отчёт] " << name << "\n"
+            << "Поставлено: " << quantity << "\n"
             << "Продано: " << sold << "\n"
-            << "Списано: " << writtenoff << "\n";
+            << "Списано: " << writtenOff << "\n";
 }

@@ -3,10 +3,9 @@
 
 int main() {
   while (true) {
-    std::cout << "Выберите задание (1, 2 или 3, 0 — выход): ";
+    std::cout << "\nВыберите задание (1, 2 или 3, 0 — выход): ";
     int t;
     std::cin >> t;
-
     switch (t) {
     case 0:
       return 0;
@@ -20,7 +19,7 @@ int main() {
       task3Menu();
       break;
     default:
-      std::cout << "Неверное значение! Попробуйте снова.\n";
+      std::cout << "Неверное значение!\n";
     }
   }
 }
