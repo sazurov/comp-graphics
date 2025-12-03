@@ -5,7 +5,7 @@
 using namespace std;
 
 void task1() {
-  cout << "=== Задание 1: Поиск символа в строке ===" << endl;
+  cout << "Задание 1: Поиск символа в строке" << endl;
 
   string str;
   char symbol;
