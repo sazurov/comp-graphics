@@ -4,10 +4,8 @@
 
 using namespace std;
 
-// Вариант 1: F(x) = -sin(x - 5)
 double function1(double x) { return -sin(x - 5); }
 
-// Вариант 2: F(x) = ln(x^2)
 double function2(double x) {
   if (x == 0) {
     cout << "Ошибка: ln(0) не определён" << endl;
@@ -16,13 +14,10 @@ double function2(double x) {
   return log(x * x);
 }
 
-// Вариант 3: F(x) = sin(x - 5)
 double function3(double x) { return sin(x - 5); }
 
-// Вариант 4: F(x) = 2^x
 double function4(double x) { return pow(2, x); }
 
-// Вариант 5: F(x) = cos^2(x + 5)
 double function5(double x) {
   double cosValue = cos(x + 5);
   return cosValue * cosValue;
@@ -119,4 +114,4 @@ double userCommunicationRecursive(int count, double sum) {
   cout << "F(" << x << ") = " << result << endl;
 
   return userCommunicationRecursive(count + 1, sum + result);
-} // namespace MathFns
+}
