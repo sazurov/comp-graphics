@@ -1,54 +1,37 @@
-#include "../include/cli.h"
-#include "../include/math_fns.h"
+#include "../include/math_functions.h"
 #include <iostream>
 
 using namespace std;
-using namespace cli;
-using namespace MathFns;
 
 int main() {
-  try {
-    double x1, x2;
-    int var;
+  int choice;
 
-    // Вызов функции коммуникации с пользователем
-    getUserInput(x1, x2, var);
+  do {
+    cout << "\n========================================" << endl;
+    cout << "Выберите задание:" << endl;
+    cout << "1 - Простая версия (задание 1 + 2)" << endl;
+    cout << "2 - Рекурсивная версия (задание 3)" << endl;
+    cout << "0 - Выход" << endl;
+    cout << "========================================" << endl;
+    cout << "Ваш выбор: ";
+    cin >> choice;
 
-    // Определяем большее число
-    double maxX = (x1 > x2) ? x1 : x2;
-    double result;
-
-    // Вычисляем значение функции для большего числа
-    switch (var) {
+    switch (choice) {
     case 1:
-      result = f1(maxX);
+      userCommunication();
       break;
-    case 2:
-      result = f2(maxX);
-      break;
-    case 3:
-      result = f3(maxX);
-      break;
-    case 4:
-      result = f4(maxX);
-      break;
-    case 5:
-      result = f5(maxX);
+    case 2: {
+      double totalSum = userCommunicationRecursive();
+      cout << "Возвращённая сумма: " << totalSum << endl;
       break;
     }
-
-    // Вывод результатов
-    displayRes(x1, x2, maxX, result, var);
-
-    cout << "\n--- Задание 3 (рекурсивная сумма) ---" << endl;
-    double sum = recursiveSum(var, x1, x2);
-    cout << "Сумма всех вычисленных значений: " << sum << endl;
-    cout << "(F(" << x1 << ") + F(" << x2 << "))" << endl;
-
-  } catch (const exception &e) {
-    cerr << "Ошибка: " << e.what() << endl;
-    return 1;
-  }
+    case 0:
+      cout << "Выход из программы." << endl;
+      break;
+    default:
+      cout << "Неверный выбор. Попробуйте снова." << endl;
+    }
+  } while (choice != 0);
 
   return 0;
 }
