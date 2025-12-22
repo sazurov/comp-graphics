@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+53bf1b87e3fca9db541c8d77263590f4 CMakeFiles/bouncing_initials_autogen
+0a639e916d4ac0cc82862f107d0e7eab bouncing_initials_autogen/timestamp

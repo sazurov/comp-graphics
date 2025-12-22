@@ -1,0 +1,5 @@
+/home/olympian/projects/c++/t10/build/CMakeFiles/bouncing_initials.dir
+/home/olympian/projects/c++/t10/build/CMakeFiles/edit_cache.dir
+/home/olympian/projects/c++/t10/build/CMakeFiles/rebuild_cache.dir
+/home/olympian/projects/c++/t10/build/CMakeFiles/bouncing_initials_autogen_timestamp_deps.dir
+/home/olympian/projects/c++/t10/build/CMakeFiles/bouncing_initials_autogen.dir

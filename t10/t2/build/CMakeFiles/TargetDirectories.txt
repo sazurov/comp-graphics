@@ -1,0 +1,3 @@
+/home/olympian/projects/c++/t10/t2/build/CMakeFiles/flower_app.dir
+/home/olympian/projects/c++/t10/t2/build/CMakeFiles/edit_cache.dir
+/home/olympian/projects/c++/t10/t2/build/CMakeFiles/rebuild_cache.dir
