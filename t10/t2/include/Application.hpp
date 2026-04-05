@@ -22,6 +22,5 @@ private:
   void handleMousePressed(const sf::Event::MouseButtonEvent &event);
   void handleMouseReleased(const sf::Event::MouseButtonEvent &event);
   void handleMouseMoved(const sf::Event::MouseMoveEvent &event);
-  void update();
   void render();
 };

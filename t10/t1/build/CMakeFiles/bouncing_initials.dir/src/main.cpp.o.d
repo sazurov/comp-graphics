@@ -1,6 +1,7 @@
 CMakeFiles/bouncing_initials.dir/src/main.cpp.o: \
- /home/olympian/projects/c++/t10/src/main.cpp /usr/include/stdc-predef.h \
- /home/olympian/projects/c++/t10/src/../include/InitialsWidget.h \
+ /home/olympian/projects/c++/t10/t1/src/main.cpp \
+ /usr/include/stdc-predef.h \
+ /home/olympian/projects/c++/t10/t1/src/../include/InitialsWidget.h \
  /usr/include/qt6/QtGui/QColor /usr/include/qt6/QtGui/qcolor.h \
  /usr/include/qt6/QtGui/qtguiglobal.h /usr/include/qt6/QtCore/qglobal.h \
  /usr/include/c++/15/type_traits \

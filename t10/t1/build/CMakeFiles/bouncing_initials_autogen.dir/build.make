@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/olympian/projects/c++/t10
+CMAKE_SOURCE_DIR = /home/olympian/projects/c++/t10/t1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/olympian/projects/c++/t10/build
+CMAKE_BINARY_DIR = /home/olympian/projects/c++/t10/t1/build
 
 # Utility rule file for bouncing_initials_autogen.
 
@@ -71,9 +71,9 @@ CMakeFiles/bouncing_initials_autogen: bouncing_initials_autogen/timestamp
 bouncing_initials_autogen/timestamp: /usr/lib64/qt6/libexec/moc
 bouncing_initials_autogen/timestamp: /usr/lib64/qt6/libexec/uic
 bouncing_initials_autogen/timestamp: CMakeFiles/bouncing_initials_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/olympian/projects/c++/t10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target bouncing_initials"
-	/usr/bin/cmake -E cmake_autogen /home/olympian/projects/c++/t10/build/CMakeFiles/bouncing_initials_autogen.dir/AutogenInfo.json ""
-	/usr/bin/cmake -E touch /home/olympian/projects/c++/t10/build/bouncing_initials_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/olympian/projects/c++/t10/t1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target bouncing_initials"
+	/usr/bin/cmake -E cmake_autogen /home/olympian/projects/c++/t10/t1/build/CMakeFiles/bouncing_initials_autogen.dir/AutogenInfo.json ""
+	/usr/bin/cmake -E touch /home/olympian/projects/c++/t10/t1/build/bouncing_initials_autogen/timestamp
 
 CMakeFiles/bouncing_initials_autogen.dir/codegen:
 .PHONY : CMakeFiles/bouncing_initials_autogen.dir/codegen
@@ -92,6 +92,6 @@ CMakeFiles/bouncing_initials_autogen.dir/clean:
 .PHONY : CMakeFiles/bouncing_initials_autogen.dir/clean
 
 CMakeFiles/bouncing_initials_autogen.dir/depend:
-	cd /home/olympian/projects/c++/t10/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/olympian/projects/c++/t10 /home/olympian/projects/c++/t10 /home/olympian/projects/c++/t10/build /home/olympian/projects/c++/t10/build /home/olympian/projects/c++/t10/build/CMakeFiles/bouncing_initials_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/olympian/projects/c++/t10/t1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/olympian/projects/c++/t10/t1 /home/olympian/projects/c++/t10/t1 /home/olympian/projects/c++/t10/t1/build /home/olympian/projects/c++/t10/t1/build /home/olympian/projects/c++/t10/t1/build/CMakeFiles/bouncing_initials_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/bouncing_initials_autogen.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/olympian/projects/c++/t10
+CMAKE_SOURCE_DIR = /home/olympian/projects/c++/t10/t1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/olympian/projects/c++/t10/build
+CMAKE_BINARY_DIR = /home/olympian/projects/c++/t10/t1/build
 
 # Utility rule file for bouncing_initials_autogen_timestamp_deps.
 
@@ -81,6 +81,6 @@ CMakeFiles/bouncing_initials_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/bouncing_initials_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/bouncing_initials_autogen_timestamp_deps.dir/depend:
-	cd /home/olympian/projects/c++/t10/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/olympian/projects/c++/t10 /home/olympian/projects/c++/t10 /home/olympian/projects/c++/t10/build /home/olympian/projects/c++/t10/build /home/olympian/projects/c++/t10/build/CMakeFiles/bouncing_initials_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/olympian/projects/c++/t10/t1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/olympian/projects/c++/t10/t1 /home/olympian/projects/c++/t10/t1 /home/olympian/projects/c++/t10/t1/build /home/olympian/projects/c++/t10/t1/build /home/olympian/projects/c++/t10/t1/build/CMakeFiles/bouncing_initials_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/bouncing_initials_autogen_timestamp_deps.dir/depend
 

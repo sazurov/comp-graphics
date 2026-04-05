@@ -1,8 +1,8 @@
 CMakeFiles/bouncing_initials.dir/bouncing_initials_autogen/mocs_compilation.cpp.o: \
- /home/olympian/projects/c++/t10/build/bouncing_initials_autogen/mocs_compilation.cpp \
+ /home/olympian/projects/c++/t10/t1/build/bouncing_initials_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/olympian/projects/c++/t10/build/bouncing_initials_autogen/6YEA5652QU/moc_InitialsWidget.cpp \
- /home/olympian/projects/c++/t10/build/bouncing_initials_autogen/6YEA5652QU/../../../include/InitialsWidget.h \
+ /home/olympian/projects/c++/t10/t1/build/bouncing_initials_autogen/6YEA5652QU/moc_InitialsWidget.cpp \
+ /home/olympian/projects/c++/t10/t1/build/bouncing_initials_autogen/6YEA5652QU/../../../include/InitialsWidget.h \
  /usr/include/qt6/QtGui/QColor /usr/include/qt6/QtGui/qcolor.h \
  /usr/include/qt6/QtGui/qtguiglobal.h /usr/include/qt6/QtCore/qglobal.h \
  /usr/include/c++/15/type_traits \

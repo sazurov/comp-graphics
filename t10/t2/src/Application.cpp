@@ -12,7 +12,6 @@ Application::Application(unsigned int width, unsigned int height)
 void Application::run() {
   while (m_window.isOpen()) {
     processEvents();
-    update();
     render();
   }
 }

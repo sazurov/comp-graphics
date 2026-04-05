@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/olympian/projects/c++/t10
+CMAKE_SOURCE_DIR = /home/olympian/projects/c++/t10/t1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/olympian/projects/c++/t10/build
+CMAKE_BINARY_DIR = /home/olympian/projects/c++/t10/t1/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/bouncing_initials.dir/depend.make
@@ -72,9 +72,9 @@ include CMakeFiles/bouncing_initials.dir/flags.make
 bouncing_initials_autogen/timestamp: /usr/lib64/qt6/libexec/moc
 bouncing_initials_autogen/timestamp: /usr/lib64/qt6/libexec/uic
 bouncing_initials_autogen/timestamp: CMakeFiles/bouncing_initials.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/olympian/projects/c++/t10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target bouncing_initials"
-	/usr/bin/cmake -E cmake_autogen /home/olympian/projects/c++/t10/build/CMakeFiles/bouncing_initials_autogen.dir/AutogenInfo.json ""
-	/usr/bin/cmake -E touch /home/olympian/projects/c++/t10/build/bouncing_initials_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/olympian/projects/c++/t10/t1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target bouncing_initials"
+	/usr/bin/cmake -E cmake_autogen /home/olympian/projects/c++/t10/t1/build/CMakeFiles/bouncing_initials_autogen.dir/AutogenInfo.json ""
+	/usr/bin/cmake -E touch /home/olympian/projects/c++/t10/t1/build/bouncing_initials_autogen/timestamp
 
 CMakeFiles/bouncing_initials.dir/codegen:
 .PHONY : CMakeFiles/bouncing_initials.dir/codegen
@@ -82,44 +82,44 @@ CMakeFiles/bouncing_initials.dir/codegen:
 CMakeFiles/bouncing_initials.dir/bouncing_initials_autogen/mocs_compilation.cpp.o: CMakeFiles/bouncing_initials.dir/flags.make
 CMakeFiles/bouncing_initials.dir/bouncing_initials_autogen/mocs_compilation.cpp.o: bouncing_initials_autogen/mocs_compilation.cpp
 CMakeFiles/bouncing_initials.dir/bouncing_initials_autogen/mocs_compilation.cpp.o: CMakeFiles/bouncing_initials.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/olympian/projects/c++/t10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/bouncing_initials.dir/bouncing_initials_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bouncing_initials.dir/bouncing_initials_autogen/mocs_compilation.cpp.o -MF CMakeFiles/bouncing_initials.dir/bouncing_initials_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/bouncing_initials.dir/bouncing_initials_autogen/mocs_compilation.cpp.o -c /home/olympian/projects/c++/t10/build/bouncing_initials_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/olympian/projects/c++/t10/t1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/bouncing_initials.dir/bouncing_initials_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bouncing_initials.dir/bouncing_initials_autogen/mocs_compilation.cpp.o -MF CMakeFiles/bouncing_initials.dir/bouncing_initials_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/bouncing_initials.dir/bouncing_initials_autogen/mocs_compilation.cpp.o -c /home/olympian/projects/c++/t10/t1/build/bouncing_initials_autogen/mocs_compilation.cpp
 
 CMakeFiles/bouncing_initials.dir/bouncing_initials_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bouncing_initials.dir/bouncing_initials_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olympian/projects/c++/t10/build/bouncing_initials_autogen/mocs_compilation.cpp > CMakeFiles/bouncing_initials.dir/bouncing_initials_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olympian/projects/c++/t10/t1/build/bouncing_initials_autogen/mocs_compilation.cpp > CMakeFiles/bouncing_initials.dir/bouncing_initials_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/bouncing_initials.dir/bouncing_initials_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bouncing_initials.dir/bouncing_initials_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olympian/projects/c++/t10/build/bouncing_initials_autogen/mocs_compilation.cpp -o CMakeFiles/bouncing_initials.dir/bouncing_initials_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olympian/projects/c++/t10/t1/build/bouncing_initials_autogen/mocs_compilation.cpp -o CMakeFiles/bouncing_initials.dir/bouncing_initials_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/bouncing_initials.dir/src/main.cpp.o: CMakeFiles/bouncing_initials.dir/flags.make
-CMakeFiles/bouncing_initials.dir/src/main.cpp.o: /home/olympian/projects/c++/t10/src/main.cpp
+CMakeFiles/bouncing_initials.dir/src/main.cpp.o: /home/olympian/projects/c++/t10/t1/src/main.cpp
 CMakeFiles/bouncing_initials.dir/src/main.cpp.o: CMakeFiles/bouncing_initials.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/olympian/projects/c++/t10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/bouncing_initials.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bouncing_initials.dir/src/main.cpp.o -MF CMakeFiles/bouncing_initials.dir/src/main.cpp.o.d -o CMakeFiles/bouncing_initials.dir/src/main.cpp.o -c /home/olympian/projects/c++/t10/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/olympian/projects/c++/t10/t1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/bouncing_initials.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bouncing_initials.dir/src/main.cpp.o -MF CMakeFiles/bouncing_initials.dir/src/main.cpp.o.d -o CMakeFiles/bouncing_initials.dir/src/main.cpp.o -c /home/olympian/projects/c++/t10/t1/src/main.cpp
 
 CMakeFiles/bouncing_initials.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bouncing_initials.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olympian/projects/c++/t10/src/main.cpp > CMakeFiles/bouncing_initials.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olympian/projects/c++/t10/t1/src/main.cpp > CMakeFiles/bouncing_initials.dir/src/main.cpp.i
 
 CMakeFiles/bouncing_initials.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bouncing_initials.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olympian/projects/c++/t10/src/main.cpp -o CMakeFiles/bouncing_initials.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olympian/projects/c++/t10/t1/src/main.cpp -o CMakeFiles/bouncing_initials.dir/src/main.cpp.s
 
 CMakeFiles/bouncing_initials.dir/src/InitialsWidget.cpp.o: CMakeFiles/bouncing_initials.dir/flags.make
-CMakeFiles/bouncing_initials.dir/src/InitialsWidget.cpp.o: /home/olympian/projects/c++/t10/src/InitialsWidget.cpp
+CMakeFiles/bouncing_initials.dir/src/InitialsWidget.cpp.o: /home/olympian/projects/c++/t10/t1/src/InitialsWidget.cpp
 CMakeFiles/bouncing_initials.dir/src/InitialsWidget.cpp.o: CMakeFiles/bouncing_initials.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/olympian/projects/c++/t10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/bouncing_initials.dir/src/InitialsWidget.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bouncing_initials.dir/src/InitialsWidget.cpp.o -MF CMakeFiles/bouncing_initials.dir/src/InitialsWidget.cpp.o.d -o CMakeFiles/bouncing_initials.dir/src/InitialsWidget.cpp.o -c /home/olympian/projects/c++/t10/src/InitialsWidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/olympian/projects/c++/t10/t1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/bouncing_initials.dir/src/InitialsWidget.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bouncing_initials.dir/src/InitialsWidget.cpp.o -MF CMakeFiles/bouncing_initials.dir/src/InitialsWidget.cpp.o.d -o CMakeFiles/bouncing_initials.dir/src/InitialsWidget.cpp.o -c /home/olympian/projects/c++/t10/t1/src/InitialsWidget.cpp
 
 CMakeFiles/bouncing_initials.dir/src/InitialsWidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bouncing_initials.dir/src/InitialsWidget.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olympian/projects/c++/t10/src/InitialsWidget.cpp > CMakeFiles/bouncing_initials.dir/src/InitialsWidget.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olympian/projects/c++/t10/t1/src/InitialsWidget.cpp > CMakeFiles/bouncing_initials.dir/src/InitialsWidget.cpp.i
 
 CMakeFiles/bouncing_initials.dir/src/InitialsWidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bouncing_initials.dir/src/InitialsWidget.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olympian/projects/c++/t10/src/InitialsWidget.cpp -o CMakeFiles/bouncing_initials.dir/src/InitialsWidget.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olympian/projects/c++/t10/t1/src/InitialsWidget.cpp -o CMakeFiles/bouncing_initials.dir/src/InitialsWidget.cpp.s
 
 # Object files for target bouncing_initials
 bouncing_initials_OBJECTS = \
@@ -141,7 +141,7 @@ bouncing_initials: /usr/lib64/libGLX.so
 bouncing_initials: /usr/lib64/libOpenGL.so
 bouncing_initials: /usr/lib64/libQt6Core.so.6.10.1
 bouncing_initials: CMakeFiles/bouncing_initials.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/olympian/projects/c++/t10/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable bouncing_initials"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/olympian/projects/c++/t10/t1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable bouncing_initials"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bouncing_initials.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +153,6 @@ CMakeFiles/bouncing_initials.dir/clean:
 .PHONY : CMakeFiles/bouncing_initials.dir/clean
 
 CMakeFiles/bouncing_initials.dir/depend: bouncing_initials_autogen/timestamp
-	cd /home/olympian/projects/c++/t10/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/olympian/projects/c++/t10 /home/olympian/projects/c++/t10 /home/olympian/projects/c++/t10/build /home/olympian/projects/c++/t10/build /home/olympian/projects/c++/t10/build/CMakeFiles/bouncing_initials.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/olympian/projects/c++/t10/t1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/olympian/projects/c++/t10/t1 /home/olympian/projects/c++/t10/t1 /home/olympian/projects/c++/t10/t1/build /home/olympian/projects/c++/t10/t1/build /home/olympian/projects/c++/t10/t1/build/CMakeFiles/bouncing_initials.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/bouncing_initials.dir/depend
 

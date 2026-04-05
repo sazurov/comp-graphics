@@ -1,11 +1,11 @@
 bouncing_initials_autogen/timestamp: \
-	/home/olympian/projects/c++/t10/CMakeLists.txt \
-	/home/olympian/projects/c++/t10/build/CMakeFiles/3.31.10/CMakeCXXCompiler.cmake \
-	/home/olympian/projects/c++/t10/build/CMakeFiles/3.31.10/CMakeSystem.cmake \
-	/home/olympian/projects/c++/t10/build/bouncing_initials_autogen/moc_predefs.h \
-	/home/olympian/projects/c++/t10/include/InitialsWidget.h \
-	/home/olympian/projects/c++/t10/src/InitialsWidget.cpp \
-	/home/olympian/projects/c++/t10/src/main.cpp \
+	/home/olympian/projects/c++/t10/t1/CMakeLists.txt \
+	/home/olympian/projects/c++/t10/t1/build/CMakeFiles/3.31.10/CMakeCXXCompiler.cmake \
+	/home/olympian/projects/c++/t10/t1/build/CMakeFiles/3.31.10/CMakeSystem.cmake \
+	/home/olympian/projects/c++/t10/t1/build/bouncing_initials_autogen/moc_predefs.h \
+	/home/olympian/projects/c++/t10/t1/include/InitialsWidget.h \
+	/home/olympian/projects/c++/t10/t1/src/InitialsWidget.cpp \
+	/home/olympian/projects/c++/t10/t1/src/main.cpp \
 	/usr/include/alloca.h \
 	/usr/include/asm-generic/bitsperlong.h \
 	/usr/include/asm-generic/errno-base.h \

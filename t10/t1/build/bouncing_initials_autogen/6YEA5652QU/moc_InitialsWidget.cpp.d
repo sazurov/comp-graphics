@@ -1,5 +1,5 @@
-/home/olympian/projects/c++/t10/build/bouncing_initials_autogen/6YEA5652QU/moc_InitialsWidget.cpp: /home/olympian/projects/c++/t10/include/InitialsWidget.h \
-  /home/olympian/projects/c++/t10/build/bouncing_initials_autogen/moc_predefs.h \
+/home/olympian/projects/c++/t10/t1/build/bouncing_initials_autogen/6YEA5652QU/moc_InitialsWidget.cpp: /home/olympian/projects/c++/t10/t1/include/InitialsWidget.h \
+  /home/olympian/projects/c++/t10/t1/build/bouncing_initials_autogen/moc_predefs.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
