@@ -1,0 +1,8 @@
+/home/olympian/projects/c++/exam/build/CMakeFiles/edit_cache.dir
+/home/olympian/projects/c++/exam/build/CMakeFiles/rebuild_cache.dir
+/home/olympian/projects/c++/exam/build/task1/CMakeFiles/exam_task1_graph.dir
+/home/olympian/projects/c++/exam/build/task1/CMakeFiles/edit_cache.dir
+/home/olympian/projects/c++/exam/build/task1/CMakeFiles/rebuild_cache.dir
+/home/olympian/projects/c++/exam/build/task2/CMakeFiles/exam_task2_clock.dir
+/home/olympian/projects/c++/exam/build/task2/CMakeFiles/edit_cache.dir
+/home/olympian/projects/c++/exam/build/task2/CMakeFiles/rebuild_cache.dir

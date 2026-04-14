@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/exam_task1_graph.dir/link.d CMakeFiles/exam_task1_graph.dir/src/main.cpp.o -o exam_task1_graph  /usr/lib64/libglfw.so.3.4 /usr/lib64/libGLX.so /usr/lib64/libOpenGL.so

@@ -1,0 +1,27 @@
+# ninja log v7
+4	904	1776173091755530438	glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj	96692ad6c2257e95
+4	915	1776173091755204385	glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj	91d339309b10f24a
+1	919	1776173091752455988	glfw/src/CMakeFiles/glfw.dir/platform.c.obj	94ea029442f7481
+4	966	1776173091754846712	glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj	35390f2ffb3c7b72
+2	977	1776173091752663695	glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj	f71ff15b5ac58313
+2	1009	1776173091753196462	glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj	93fe3a37e1470a2a
+2	1024	1776173091753386084	glfw/src/CMakeFiles/glfw.dir/null_init.c.obj	49bd97b14696cdb8
+2	1048	1776173091753588140	glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj	3959074ada94ecd4
+9	1084	1776173091758862239	glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj	84cf562e32b837be
+1	1109	1776173091751953509	glfw/src/CMakeFiles/glfw.dir/init.c.obj	fa36999be15b997b
+5	1140	1776173091755782229	glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj	e3526e3d44646842
+1	1167	1776173091750861967	glfw/src/CMakeFiles/glfw.dir/context.c.obj	5d3985970d1c4c69
+2	1170	1776173091752841785	glfw/src/CMakeFiles/glfw.dir/window.c.obj	68e37fed7f6c0683
+4	1210	1776173091753862069	glfw/src/CMakeFiles/glfw.dir/null_window.c.obj	97e8b70f1e883de0
+1	1302	1776173091752277437	glfw/src/CMakeFiles/glfw.dir/monitor.c.obj	a6f32b372a27137e
+10	1302	1776173091759862273	glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj	f77a5ffd03332193
+2	1400	1776173091753021919	glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj	27b42f9df6de9579
+1	1556	1776173091752102383	glfw/src/CMakeFiles/glfw.dir/input.c.obj	4347ef4e06fe05df
+906	1731	1776173092657892747	glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj	5e8de145a1cd0309
+919	1831	1776173092668893121	glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj	3f3894ba1bc04ab1
+915	1980	1776173092664892985	glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj	a3b09b3aa3c28b
+1980	2041	1776173093729929127	glfw/src/libglfw3.a	fdff93071dc88b4b
+2	1100	1776173141024213462	task2/CMakeFiles/exam_task2_clock.dir/src/main.cpp.obj	1bc9ce797f60cade
+1101	1162	1776173142122772306	task2/exam_task2_clock.exe	ba6e100d91b4de02
+2	1269	1776173141023534029	task1/CMakeFiles/exam_task1_graph.dir/src/main.cpp.obj	c6efcf6dc64bfd9f
+1270	1326	1776173142290577026	task1/exam_task1_graph.exe	ff2904a80a140deb
